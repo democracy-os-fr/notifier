@@ -1,4 +1,14 @@
 
+1.0.1 / 2016-03-02
+==================
+
+  * Correctly fallback missing translations to English
+
+0.0.16 / 2016-02-03
+===================
+
+  * Re-add topic-published job
+
 0.0.15 / 2015-11-03
 ===================
 
