@@ -3,11 +3,11 @@
   "templates.email.signature": "L'équipe de participez.nanterre.fr",
 
   "templates.welcome-email.subject": "Bienvenue sur participez.nanterre.fr",
-  "templates.welcome-email.body": "Merci de vous être enregistré sur participez.nanterre.fr. Vous pouvez désormais vous identifier en cliquant <a href=\"VALIDATE_MAIL_URL\">sur ce lien</a> ou en le copiant dans votre navigateur : VALIDATE_MAIL_URL",
+  "templates.welcome-email.body": "Merci de vous être enregistré sur participez.nanterre.fr. Vous pouvez désormais vous identifier en cliquant <a href=\"VALIDATE_MAIL_URL\">sur ce lien</a> ou en le copiant dans votre navigateur : <br/>VALIDATE_MAIL_URL",
   "templates.welcome-email.ps": "Ce lien ne peut être utilisé pour s'identifier qu'une seule fois pour vos prochaines connexion utilisez l'adresse : https://participez.nanterre.fr/debat/signin . Si vous n'avez pas créé un compte sur participez.nanterre.fr, ignorez cet email.",
 
   "templates.reset-password.subject": "participez.nanterre.fr - Rétablir votre mot de passe",
-  "templates.reset-password.body": "Pour rétablir votre mot de passe merci de cliquer <a href=\"RESET_PASSWORD_URL\">sur ce lien</a> ou de le copier dans votre navigateur : RESET_PASSWORD_URL.",
+  "templates.reset-password.body": "Pour rétablir votre mot de passe merci de cliquer <a href=\"RESET_PASSWORD_URL\">sur ce lien</a> ou de le copier dans votre navigateur : <br/>RESET_PASSWORD_URL.",
   "templates.reset-password.ps": "Si vous n'avez pas demandé le rétablissement de votre mot de passe, merci d'ignorer cet email",
 
   "templates.comment-reply.subject": "Quelqu'un a répondu à votre contribution",
