@@ -20,5 +20,5 @@
 
   "templates.comment-published.subject": "New comment published",
   "templates.comment-published.body": "A new comment has been published:",
-  "templates.comment-published.body2": "Please <a href=\"URL\">click here</a> to see it.",
+  "templates.comment-published.body2": "Please <a href=\"URL\">click here</a> to see it."
 }
