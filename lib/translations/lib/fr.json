@@ -20,5 +20,8 @@
 
   "templates.comment-published.subject": "Nouvelle contribution sur participez.nanterre.fr",
   "templates.comment-published.body": "Une nouvelle contribution est en ligne sur participez.nanterre.fr :",
+  "templates.comment-published.topic": "Débat",
+  "templates.comment-published.author": "Auteur",
+  "templates.comment-published.text": "Texte",
   "templates.comment-published.body2": "Pour la consulter cliquez <a href=\"URL\">sur ce lien</a>"
 }
