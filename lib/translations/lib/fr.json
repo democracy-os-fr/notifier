@@ -16,5 +16,9 @@
 
   "templates.topic-published.subject": "Nouveau débat sur participez.nanterre.fr",
   "templates.topic-published.body": "Un nouveau débat est en ligne sur participez.nanterre.fr :",
-  "templates.topic-published.body2": "Pour le découvrir cliquez <a href=\"URL\">sur ce lien</a>"
+  "templates.topic-published.body2": "Pour le découvrir cliquez <a href=\"URL\">sur ce lien</a>",
+
+  "templates.comment-published.subject": "Nouvelle contribution sur participez.nanterre.fr",
+  "templates.comment-published.body": "Une nouvelle contribution est en ligne sur participez.nanterre.fr :",
+  "templates.comment-published.body2": "Pour la consulter cliquez <a href=\"URL\">sur ce lien</a>"
 }
