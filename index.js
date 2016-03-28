@@ -18,6 +18,17 @@ var defaultOpts = {
       user: '',
       pass: ''
     }
+  },
+  organization: {
+    name: 'The DemocracyOS team',
+    url: 'http://democracyos.org',
+    email: 'noreply@democracyos.org',
+    logo: false
+  },
+  style: {
+    backgroundColor: '#64476e',
+    fontColor: '#fff',
+    contrast: false
   }
 }
 
