@@ -1,10 +1,24 @@
-p=t('templates.email.greeting')
-p=t('templates.comment-published.body')
-h4=t('templates.comment-published.topic')
-p="TOPIC"
-h4=t('templates.comment-published.author')
-p="AUTHOR"
-h4=t('templates.comment-published.text')
-p="COMMENT"
-p!=t('templates.comment-published.body2')
-p=t('templates.email.signature')
+extends wrapper.jade
+
+block content
+
+table(width='100%', cellpadding='0', cellspacing='0')
+  tr
+    td.content-block
+      p=t('templates.email.greeting')
+      p=t('templates.comment-published.body')
+  tr
+    h4=t('templates.comment-published.topic')
+    p="TOPIC"
+    h4=t('templates.comment-published.author')
+    p="AUTHOR"
+  tr
+    h4=t('templates.comment-published.text')
+    p="COMMENT"
+  tr
+    td.content-block
+      p!=t('templates.comment-published.body2')
+      a.btn-primary(href='http://www.mailgun.com') Upgrade my account
+  tr
+    td.content-block
+      p=t('templates.email.signature')
