@@ -6,7 +6,7 @@
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 img {
@@ -72,6 +72,16 @@ body {
   padding: 0 0 20px;
 }
 
+.copy-block {
+  padding: 15px;
+  font-size: 13px;
+}
+
+.ps-block {
+  padding: 5px 0 20px;
+  font-size: 13px;
+}
+
 .header {
   width: 100%;
   margin-bottom: 20px;
@@ -85,7 +95,31 @@ body {
 }
 .footer p, .footer a, .footer td {
   color: #999;
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.brand {
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 3px 3px 0 0;
+}
+
+.brand a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.brand-image {
+  width: 28px;
+  height: 28px;
+}
+
+.brand-text {
+  padding-left: 10px;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 /* -------------------------------------
@@ -94,13 +128,13 @@ body {
 h1, h2, h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
-  margin: 40px 0 0;
+  margin: 20px 0 10px;
   line-height: 1.2em;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   /* 1.2em * 32px = 38.4px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 38px;*/
@@ -119,8 +153,10 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
+  text-transform: uppercase;
+  color: #999;
 }
 
 p, ul, ol {
@@ -193,7 +229,6 @@ a {
   color: #fff;
   font-weight: 500;
   padding: 20px;
-  text-align: center;
   border-radius: 3px 3px 0 0;
 }
 .alert a {
@@ -278,3 +313,5 @@ a {
     width: 100% !important;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

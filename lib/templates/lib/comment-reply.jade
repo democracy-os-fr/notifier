@@ -1,5 +1,15 @@
-p=t('templates.email.greeting')
-p=t('templates.comment-reply.body')
-p='"REPLY"'
-p!=t('templates.comment-reply.body2')
-p=t('templates.email.signature')
+extends wrapper.jade
+
+block content
+
+  table(width='100%', cellpadding='0', cellspacing='0')
+    tr
+      td.content-block
+        p=t('templates.email.greeting',{USERNAME:USERNAME})
+        p=t('templates.comment-reply.body')
+    tr
+      td.content-block
+        a.btn-primary(href=URL)=t('templates.email.link')
+    tr
+      td.content-block
+        p!=t('templates.email.signature',{config:config})
