@@ -1,8 +1,13 @@
 {
   "templates.email.greeting": "Hola, {USERNAME}",
-  "templates.email.signature": "El equipo de DemocracyOS.",
+  "templates.email.signature": "- El equipo de <a href=\"{config.organization.url}\">{config.organization.name}</a>.",
 
-  "templates.welcome-email.subject": "¡Bienvenid@ a DemocracyOS!",
+  "templates.email.topic": "Tema",
+  "templates.email.author": "Autor",
+  "templates.email.text": "Comentario",
+  "templates.email.link": "Ver Online",
+
+  "templates.welcome-email.subject": "¡Bienvenid@ a {config.organization.name}!",
   "templates.welcome-email.body": "Por favor <a href=\"{VALIDATE}\">cliquea aquí</a> para validar tu dirección de correo electrónico.",
   "templates.welcome-email.ps": "P.D.: si no creaste una cuenta, por favor ignora este correo.",
 
