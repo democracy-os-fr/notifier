@@ -1,6 +1,6 @@
 {
   "templates.email.greeting": "{USERNAME},",
-  "templates.email.signature": "— l'équipe de <a href=\"{config.organization.url}\">{config.organization.name}</a>",
+  "templates.email.signature": "— L'équipe de <a href=\"{config.organization.url}\">{config.organization.name}</a>",
 
   "templates.email.topic": "Débat",
   "templates.email.author": "Auteur",
@@ -9,7 +9,7 @@
 
   "templates.welcome-email.subject": "Bienvenue sur {config.organization.name}",
   "templates.welcome-email.body": "Merci de vous être enregistré sur {config.organization.name}. Vous pouvez désormais vous identifier en cliquant <a href=\"{VALIDATE}\">sur ce lien</a> ou en le copiant dans votre navigateur",
-  "templates.welcome-email.ps": "Ce lien ne peut être utilisé pour s'identifier qu'une seule fois pour vos prochaines connexion utilisez l'adresse : {SIGNIN} . Si vous n'avez pas créé un compte sur {config.organization.name}, ignorez cet email.",
+  "templates.welcome-email.ps": "Ce lien ne peut être utilisé pour s'identifier qu'une seule fois pour vos prochaines connexions utilisez l'adresse : {SIGNIN} . Si vous n'avez pas créé un compte sur {config.organization.name}, ignorez cet email.",
   "templates.welcome-email.link": "Valider votre inscription",
 
   "templates.reset-password.subject": "Rétablir votre mot de passe",
