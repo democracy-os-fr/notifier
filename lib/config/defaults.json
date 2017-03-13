@@ -28,7 +28,7 @@
     "backgroundColor": "#64476e",
     "fontColor": "#fff",
     "contrast": false
-  }
+  },
   "mailer": {
     "service": "",
     "auth": {
