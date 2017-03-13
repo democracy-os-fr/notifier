@@ -1,4 +1,38 @@
 
+1.3.0 / 2017-01-26
+==================
+
+  * Update agenda dependency to ~0.9.0
+
+1.2.0 / 2017-01-25
+==================
+
+  * Update dependencies
+
+1.1.3 / 2016-11-04
+==================
+
+  * fix defaulting to directTransport email sender
+  * Fix for the ReDOS vulnerability #29
+
+1.1.2 / 2016-10-24
+==================
+
+  * Fix notifier crash because of authMechanism
+
+1.1.1 / 2016-10-19
+==================
+
+  * Update dependencies
+
+1.1.0 / 2016-10-18
+==================
+
+  * Add generic config for nodemailer
+  * Add availableLocales config option
+  * Refactor configuration on its own module
+  * Add unit tests #25 thanks @SebastienDaniel!
+
 1.0.1 / 2016-03-02
 ==================
 
