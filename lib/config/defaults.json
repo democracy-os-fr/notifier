@@ -1,0 +1,40 @@
+{
+  "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
+  "collection": "notifierJobs",
+  "defaultLocale": "en",
+  "availableLocales": [
+    "ca",
+    "de",
+    "en",
+    "es",
+    "fi",
+    "fr",
+    "gl",
+    "it",
+    "nl",
+    "pt",
+    "ru",
+    "uk"
+  ],
+  "organizationName": "noreply@democracyos.org",
+  "organizationEmail": "The DemocracyOS team",
+  "organization": {
+    "name": "The DemocracyOS team",
+    "url": "http://democracyos.org",
+    "email": "noreply@democracyos.org",
+    "logo": false
+  },
+  "style": {
+    "backgroundColor": "#64476e",
+    "fontColor": "#fff",
+    "contrast": false
+  }
+  "mailer": {
+    "service": "",
+    "auth": {
+      "user": "",
+      "pass": ""
+    }
+  },
+  "nodemailer": {}
+}

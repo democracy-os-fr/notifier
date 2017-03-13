@@ -1,48 +1,22 @@
-var defaults = require('defaults-deep')
 var agenda = require('./lib/agenda')
 var timing = require('./lib/utils/timing')
 var jobs = require('./lib/jobs')
 var transports = require('./lib/transports')
+var config = require('./lib/config')
 
 var log = require('debug')('democracyos:notifier')
 
-var defaultOpts = {
-  mongoUrl: 'mongodb://localhost/DemocracyOS-dev',
-  collection: 'notifierJobs',
-  defaultLocale: 'en',
-  organizationEmail: 'noreply@democracyos.org',
-  organizationName: 'The DemocracyOS team',
-  mailer: {
-    service: '',
-    auth: {
-      user: '',
-      pass: ''
-    }
-  },
-  organization: {
-    name: 'The DemocracyOS team',
-    url: 'http://democracyos.org',
-    email: 'noreply@democracyos.org',
-    logo: false
-  },
-  style: {
-    backgroundColor: '#64476e',
-    fontColor: '#fff',
-    contrast: false
-  }
-}
-
 var exports = module.exports = function startNotifier(opts, callback) {
-  defaults(opts, defaultOpts)
+  config.set(opts)
 
   agenda = agenda({
     db: {
-      address: opts.mongoUrl,
-      collection: opts.collection
+      address: config.get('mongoUrl'),
+      collection: config.get('collection')
     }
   })
 
-  transports = transports(opts)
+  transports()
 
   setTimeout(function verifyInitialization(){
     if (!agenda._collection) {
@@ -50,7 +24,7 @@ var exports = module.exports = function startNotifier(opts, callback) {
       return setTimeout(verifyInitialization, 100)
     }
     log('agenda initialized.')
-    init(opts, callback)
+    init(callback)
   }, 100)
 
   exports.notify = function notify(event, callback) {
@@ -58,12 +32,12 @@ var exports = module.exports = function startNotifier(opts, callback) {
   }
 }
 
-function init(opts, callback){
+function init(callback){
   agenda.purge(function (err) {
     if (err) return callback && callback(err)
 
-    //initialize job processors
-    jobs(agenda, opts.mongoUrl)
+    // initialize job processors
+    jobs(agenda, config.get('mongoUrl'))
 
     agenda.on('start', function (job) {
       timing.start(job)
